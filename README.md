@@ -1,14 +1,15 @@
-Cardiac Electromechanics Research Group
-Fetal MRI Research Group
+MITK-BASED GUI FOR FETAL MRI SVR RECONSTRUCTION 
 =======================================
 
 This software is distributed WITHOUT ANY WARRANTY or SUPPORT! This project provides a complete CMake-based set-up to get easily started with using [MITK](http://www.mitk.org) and extending it via plug-ins and modules.
 
+- original branch developed by Cardiac Electromechanics Research Group: https://github.com/CemrgAppDevelopers/CemrgApp 
+
 
 Description 
 ------------------------------------------
-- original branch: https://github.com/CemrgAppDevelopers/CemrgApp 
-- to be updated (fetal MRI reconstruction)
+
+- to be updated (Festive plugin for fetal MRI reconstruction)
 
 
 Supported Platforms
