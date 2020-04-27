@@ -1,0 +1,41 @@
+./MitkPluginGenerator
+-o /home/jsl19/dev/cemrg.newplugins
+-l /home/jsl19/dev/cemrg.upgrade/LICENSE.txt
+-v KCL -vc "EASIView"
+-vn "Easi"
+-ps kcl.cemrgapp.easi
+-pn "Easi Plugin" --project-copyright /home/jsl19/dev/cemrg.upgrade/Copyright.txt --project-app-name CemrgApp
+
+# easi
+./MitkPluginGenerator -y -o /home/jsl19/dev/cemrg.newplugins -l /home/jsl19/dev/cemrg.upgrade/LICENSE.txt -v KCL -vc "EASIView" -vn "Easi" -ps kcl.cemrgapp.easi -pn "Easi Plugin" --project-copyright /home/jsl19/dev/cemrg.upgrade/Copyright.txt --project-app-name CemrgApp
+
+# festive
+./MitkPluginGenerator -y -o /home/jsl19/dev/cemrg.newplugins -l /home/jsl19/dev/cemrg.upgrade/LICENSE.txt -v KCL --project-copyright /home/jsl19/dev/cemrg.upgrade/Copyright.txt --project-app-name CemrgApp -vc "FestiveView" -vn "Festive" -ps kcl.cemrgapp.festive -pn "Festive Plugin"
+
+# mainapp
+# Careful with this one as it is the main app!! Careful with the plugin.xml
+# Previous class name: QmitkCemrgApplication
+./MitkPluginGenerator -y -o /home/jsl19/dev/cemrg.newplugins -l /home/jsl19/dev/cemrg.upgrade/LICENSE.txt -v KCL --project-copyright /home/jsl19/dev/cemrg.upgrade/Copyright.txt --project-app-name CemrgApp -vc "QmitkCemrgApplication" -vn "Cemrg Application" -ps kcl.cemrgapp.mainapp -pn "CemrgApplication"
+
+# mmcw
+./MitkPluginGenerator -y -o /home/jsl19/dev/cemrg.newplugins -l /home/jsl19/dev/cemrg.upgrade/LICENSE.txt -v KCL --project-copyright /home/jsl19/dev/cemrg.upgrade/Copyright.txt --project-app-name CemrgApp -vc "MmcwView" -vn "MMCW" -ps kcl.cemrgapp.mmcwplugin -pn "MMCW Plugin"
+./MitkPluginGenerator -y -o /home/jsl19/dev/cemrg.newplugins -l /home/jsl19/dev/cemrg.upgrade/LICENSE.txt -v KCL --project-copyright /home/jsl19/dev/cemrg.upgrade/Copyright.txt --project-app-name CemrgApp -vc "MmcwViewPlot" -vn "MMCW Plot" -ps kcl.cemrgapp.mmcwplugin -pn "MMCW Plot Plugin"
+
+# mmeasurement
+./MitkPluginGenerator -y -o /home/jsl19/dev/cemrg.newplugins -l /home/jsl19/dev/cemrg.upgrade/LICENSE.txt -v KCL --project-copyright /home/jsl19/dev/cemrg.upgrade/Copyright.txt --project-app-name CemrgApp -vc "MmeasurementView" -vn "Motion Measurement" -ps kcl.cemrgapp.mmeasurement -pn "Mmeasurement Plugin"
+
+# renderwindoweditor
+# The previous class name was QmitkCemrgRenderWindowEditor
+./MitkPluginGenerator -y -o /home/jsl19/dev/cemrg.newplugins -l /home/jsl19/dev/cemrg.upgrade/LICENSE.txt -v KCL --project-copyright /home/jsl19/dev/cemrg.upgrade/Copyright.txt --project-app-name CemrgApp -vc "QmitkCemrgRenderWindowEditor" -vn "Render Window Editor" -ps kcl.cemrgapp.renderwindoweditor -pn "RenderWindow Plugin"
+
+# scar
+#  careful! Several other things! AtrialScarClipperView, YZSegView, check plugin.xml
+./MitkPluginGenerator -y -o /home/jsl19/dev/cemrg.newplugins -l /home/jsl19/dev/cemrg.upgrade/LICENSE.txt -v KCL --project-copyright /home/jsl19/dev/cemrg.upgrade/Copyright.txt --project-app-name CemrgApp -vc "AtrialScarView" -vn "Scar" -ps kcl.cemrgapp.scar -pn "Scar Plugin"
+./MitkPluginGenerator -y -o /home/jsl19/dev/cemrg.newplugins -l /home/jsl19/dev/cemrg.upgrade/LICENSE.txt -v KCL --project-copyright /home/jsl19/dev/cemrg.upgrade/Copyright.txt --project-app-name CemrgApp -vc "AtrialScarClipperView" -vn "Scar Clipper" -ps kcl.cemrgapp.scar -pn "Scar Clipper Plugin"
+./MitkPluginGenerator -y -o /home/jsl19/dev/cemrg.newplugins -l /home/jsl19/dev/src/cemrgapp/LICENSE.txt -v KCL --project-copyright /home/jsl19/dev/src/cemrgapp/Copyright.txt --project-app-name CemrgApp -vc "YZSegView" -vn "Scar YZSeg" -ps kcl.cemrgapp.scar -pn "Scar YZSeg Plugin"
+./MitkPluginGenerator -y -o /home/jsl19/dev/plugins.new.cemrg -l /home/jsl19/dev/src/cemrgapp/LICENSE.txt -v KCL --project-copyright /home/jsl19/dev/src/cemrgapp/Copyright.txt --project-app-name CemrgApp -vc "ScarCalculationsView" -vn "Scar Calculations" -ps kcl.cemrgapp.scar -pn "Scar Calculations Plugin"
+
+# wathca
+# This one also has a Clipper
+./MitkPluginGenerator -y -o /home/jsl19/dev/cemrg.newplugins -l /home/jsl19/dev/cemrg.upgrade/LICENSE.txt -v KCL --project-copyright /home/jsl19/dev/cemrg.upgrade/Copyright.txt --project-app-name CemrgApp -vc "WallThicknessCalculationsView" -vn "WaThCa View" -ps kcl.cemrgapp.wathca -pn "WaThCa Plugin"
+./MitkPluginGenerator -y -o /home/jsl19/dev/cemrg.newplugins -l /home/jsl19/dev/cemrg.upgrade/LICENSE.txt -v KCL --project-copyright /home/jsl19/dev/cemrg.upgrade/Copyright.txt --project-app-name CemrgApp -vc "WallThicknessCalculationsClipperView" -vn "WaThCa Clipper View" -ps kcl.cemrgapp.wathca -pn "WaThCa Clipper Plugin"
