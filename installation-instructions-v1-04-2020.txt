@@ -35,7 +35,7 @@ git clone https://github.com/SVRTK/MITK.git
 
 
 
-3) compile the app: 
+4) compile the app: 
 
 cd ~/Software/MITK
 mkdir build
@@ -44,16 +44,21 @@ cmake -DCMAKE_PREFIX_PATH=~/Software/Qt5.11.1/5.11.1/clang_64 -ITK_EXTENSION_DIR
 sudo make -j
 
 # or use ccmake to inspect all options / sudo is required for iOS
+
+
+
+5) save and unzip mirtk-bin.zip to ~/Software/mirtk-bin (email alena.uus@kcl.ac.uk to get the archive with executables - the final version will be uploaded online soon)
 	
 
 
-4) run the app (note that the names can be different for iOS and Ubuntu): 
+6) run the app (note that the names can be different for iOS and Ubuntu): 
 
 ~/Software/MITK/build/MITK-build/bin/CemrgApp.app 
 
 
 
-5) generate standalone executable:
+
+7) generate standalone executable:
 	
 	- navigate to ~/Software/MITK/MITK-build/
 	- run:
@@ -63,7 +68,7 @@ sudo make -j
 
 
 
-6) script for GUI password window: to be updated
+8) script for GUI password window: to be updated
 
 
 
