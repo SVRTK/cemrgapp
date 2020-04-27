@@ -1,0 +1,77 @@
+# ===========================================================================================
+# 
+# CEMRG APP SVR compilation instructions for iOS and Ubuntu 16
+# 
+# 09/2019 - 04/2020 - preliminary version
+# 
+# Please note that this code focuses on Festive plunging for Fetal MRI motion correction only.
+# The main branch developed by CMR Research Group at KCL can be found here: 
+# https://github.com/CemrgAppDevelopers/
+# 
+# 
+# ===========================================================================================
+
+
+0) create Software folder in ~ (in case if does not exist)
+
+mkdir ~/Software
+cd ~/Software
+
+
+
+1) clone CEMRG app from SVRTK:
+
+git clone https://github.com/SVRTK/CEMRG_SVR.git
+
+
+
+2) clone MITK from SVRTK: 
+
+git clone https://github.com/SVRTK/MITK.git  
+
+
+
+3) download and install .dmg QT5.11 from http://download.qt.io/archive/qt/5.11/5.11.1/ and install to  ~/Software/Qt5.11.1/ (this or Qt5.12 versions are required for compilation due to old libraries used in MITK)
+
+
+
+3) compile the app: 
+
+cd ~/Software/MITK
+mkdir build
+cd build  
+cmake -DCMAKE_PREFIX_PATH=~/Software/Qt5.11.1/5.11.1/clang_64 -ITK_EXTENSION_DIRS=~/Software/cemrgapp ..
+sudo make -j
+
+# or use ccmake to inspect all options / sudo is required for iOS
+	
+
+
+4) run the app (note that the names can be different for iOS and Ubuntu): 
+
+~/Software/MITK/build/MITK-build/bin/CemrgApp.app 
+
+
+
+5) generate standalone executable:
+	
+	- navigate to ~/Software/MITK/MITK-build/
+	- run:
+		sudo make package
+
+	- the output app will be "sDMAS-2018.07-2294-g237478713b-local_changes-macos-x86_64.dmg" (you can rename it)
+
+
+
+6) script for GUI password window: to be updated
+
+
+
+# ===========================================================================================
+# 
+# email alena.uus@kcl.ac.uk if something does not work
+# 
+# ===========================================================================================
+
+
+
