@@ -1,4 +1,4 @@
-MITK-BASED GUI FOR FETAL MRI SVR RECONSTRUCTION 
+MITK-based GUI for fetal MRI SVR reconstruction 
 =======================================
 
 - This software is distributed WITHOUT ANY WARRANTY or SUPPORT! This project provides a complete CMake-based set-up to get easily started with using [MITK](http://www.mitk.org) and extending it via plug-ins and modules.
