@@ -31,17 +31,31 @@ git clone https://github.com/SVRTK/MITK.git
 
 
 
-3) download and install .dmg QT5.11 from http://download.qt.io/archive/qt/5.11/5.11.1/ and install to  ~/Software/Qt5.11.1/ (this or Qt5.12 versions are required for compilation due to old libraries used in MITK)
+3) download and install .dmg QT5.11 (of QT5.12) from http://download.qt.io/archive/qt/5.11/5.11.1/ and install to  ~/Software/Qt5.11.1/ (this or Qt5.12 versions are required for compilation due to old libraries used in MITK)
 
 
 
 4) compile the app: 
+
+
+# iOS:
 
 cd ~/Software/MITK
 mkdir build
 cd build  
 cmake -DCMAKE_PREFIX_PATH=~/Software/Qt5.11.1/5.11.1/clang_64 -ITK_EXTENSION_DIRS=~/Software/cemrgapp ..
 sudo make -j
+
+
+# Ubuntu:
+
+cd ~/Software/MITK
+mkdir build
+cd build  
+cmake -DCMAKE_PREFIX_PATH=~/Software/Qt5.11.1/5.11.1/gcc_64 -ITK_EXTENSION_DIRS=~/Software/cemrgapp ..
+sudo make -j
+
+
 
 # or use ccmake to inspect all options / sudo is required for iOS
 
