@@ -31,7 +31,7 @@ git clone https://github.com/SVRTK/MITK.git
 
 
 
-3) download and install .dmg QT5.11 (of QT5.12) from http://download.qt.io/archive/qt/5.11/5.11.1/ and install to  ~/Software/Qt5.11.1/ (this or Qt5.12 versions are required for compilation due to old libraries used in MITK)
+3) download and install QT5.12 from https://download.qt.io/archive/qt/5.12/5.12.0/ and install to  ~/Software/Qt5.11.1/ (this versions is required for compilation due to old libraries used in MITK)
 
 
 
@@ -43,7 +43,7 @@ git clone https://github.com/SVRTK/MITK.git
 cd ~/Software/MITK
 mkdir build
 cd build  
-cmake -DCMAKE_PREFIX_PATH=~/Software/Qt5.11.1/5.11.1/clang_64 -ITK_EXTENSION_DIRS=~/Software/cemrgapp ..
+cmake -DCMAKE_PREFIX_PATH=~/Software/Qt5.12.0/5.12.0/clang_64 -ITK_EXTENSION_DIRS=~/Software/cemrgapp ..
 sudo make -j
 
 
@@ -52,7 +52,7 @@ sudo make -j
 cd ~/Software/MITK
 mkdir build
 cd build  
-cmake -DCMAKE_PREFIX_PATH=~/Software/Qt5.11.1/5.11.1/gcc_64 -ITK_EXTENSION_DIRS=~/Software/cemrgapp ..
+cmake -DCMAKE_PREFIX_PATH=~/Software/Qt5.12.0/5.12.0/gcc_64 -ITK_EXTENSION_DIRS=~/Software/cemrgapp ..
 sudo make -j
 
 
