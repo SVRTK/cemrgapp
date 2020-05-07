@@ -21,7 +21,7 @@ cd ~/Software
 
 1) clone CEMRG app from SVRTK:
 
-git clone https://github.com/SVRTK/CEMRG_SVR.git
+git clone https://github.com/SVRTK/cemrgapp.git
 
 
 
