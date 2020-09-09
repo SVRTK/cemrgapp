@@ -9,7 +9,10 @@ MITK-based GUI for fetal MRI SVR reconstruction
 Description 
 ------------------------------------------
 
-- to be updated (Festive plugin for fetal MRI reconstruction)
+- Festive plugin for fetal MRI reconstruction currently used for fetal CMR processing at Evelina London Children's Hospital (London, UK)
+- Additional functionality: rigid SVR, deformable SVR, registration and label propagation for segmentation
+
+Lloyd, DFA, Pushparajah, K, Simpson, JM, Van Amerom, JFP, Van Poppel, MPM, Schulz, A, Kainz, B, Deprez, M, Lohezic, M, Allsop, J, Mathur, S, Bellsham-revell, H, Vigneswaran, T, Charakida, M, Miller, O, Zidere, V, Sharland, G, Rutherford, M, Hajnal, JV & Razavi, R 2019, 'Three-dimensional visualisation of the fetal heart using prenatal MRI with motion corrected slice-volume registration: a prospective, single-centre cohort study', The Lancet, vol. 393, no. 10181, pp. 1619-1627. https://doi.org/10.1016/S0140-6736(18)32490-5
 
 
 Supported Platforms
@@ -18,19 +21,9 @@ Supported Platforms
 - MacOSX 
 
 
-Requirements
+Requirements and Installation 
 ------------------------------------------
-- to be updated 
-
-
-Installation 
-------------------------------------------
-- to be updated 
-
-
-Use / instructions 
-------------------------------------------
-- to be updated 
+- Please check the installation guidelines document. 
 
 
 Contacts
